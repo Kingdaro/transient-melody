@@ -1,5 +1,5 @@
 with {}
-  .draw = (nx, ny, frame) ->
+  .drawNote = (nx, ny, frame) ->
     with love.graphics
       .push!
       .translate frame.x + nx * frame.width, frame.y + ny * frame.height

@@ -1,12 +1,11 @@
-note = require 'note'
-frame = require 'frame'
+game = require 'game'
 
 love.load = () ->
 
 love.update = (dt) ->
 
 love.draw = () ->
-  note.draw 0, 0, frame.fromScreenMargin 100, 100, 180, 180
+  game.draw!
 
 love.keypressed = (key) ->
   if key == 'escape'
