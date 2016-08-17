@@ -1,11 +1,11 @@
-game = require 'game'
+import drawGame from require 'game'
 
 love.load = () ->
 
 love.update = (dt) ->
 
 love.draw = () ->
-  game.draw!
+  drawGame!
 
 love.keypressed = (key) ->
   if key == 'escape'
